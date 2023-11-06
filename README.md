@@ -1,5 +1,10 @@
 # EncryptedChat
 端到端加密聊天，汉化自[https://github.com/triestpa/Open-Cryptochat](https://github.com/triestpa/Open-Cryptochat)
+```
+构建 yarn install
+运行 yarn start
+```
+
 以下为汉化后的原版介绍
 
 # 浅谈在Javascript中使用公钥密码
