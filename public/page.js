@@ -77,7 +77,7 @@ const vm = new Vue ({
 
       // Notify user that the room they are attempting to join is full
       this.socket.on('ROOM_FULL', () => {
-        this.addNotification(`Cannot join ${this.pendingRoom}, room is full`)
+        this.addNotification(`不能加入 ${this.pendingRoom}, 房间满员了`)
 
         // Join a random room as a fallback
         this.pendingRoom = Math.floor(Math.random() * 1000)
@@ -86,7 +86,7 @@ const vm = new Vue ({
 
       // Notify room that someone attempted to join
       this.socket.on('INTRUSION_ATTEMPT', () => {
-        this.addNotification('A third user attempted to join the room.')
+        this.addNotification('第三个用户加入了房间。')
       })
     },
 
